@@ -1,30 +1,38 @@
 #!/usr/bin/perl -w
 
-# $Id: 99,v 1.1 2004-08-15 13:54:13 kst Exp $
+# $Id: 99,v 1.2 2004-08-15 21:43:42 kst Exp $
 # $Source: /home/kst/CVS_99/99/99,v $
+
+#
+# Interpreter for the "99" programming language.
+#
 
 use strict;
 
 my $error_line = undef;
 
+#
+# Check for errors.
+#
 while (<>) {
     s/#.*$//;
     s/^\s*//;
     s/\s*$//;
-    $error_line = $. if not defined $error_line and /./;
+    defined $error_line or $error_line = $. if /./;
 }
 
 die "Syntax error on line $error_line\n" if defined $error_line;
 
-for (my $i = 99; $i >= 1; $i --) {
-    my $s  = ($i == 1)     ? ''   : 's';
-    my $s1 = ($i - 1 == 1) ? ''   : 's';
-    my $i1 = ($i == 1)     ? 'No' : $i - 1;
-    my $blank = ($i == 1)  ? ''   : "\n";
-    print <<"EOF";
-$i bottle$s of beer on the wall,
-$i bottle$s of beer
-Take one down, pass it around,
-$i1 bottle$s1 of beer on the wall.$blank
-EOF
+#
+# "Run" the "program".
+#
+for (my $i = 99; $i >= 0; $i --) {
+    my $s   = ($i == 1) ? ''   : 's';
+    my $num = ($i == 0) ? 'No' : $i;
+    my $one = ($i == 1) ? 'it' : 'one';
+    my $bottles = "$num bottle$s of beer";
+    my $take = "Take $one down, pass it around";
+    print "$bottles on the wall.\n" if $i < 99;
+    print "\n" if $i % 99;
+    print "$bottles on the wall,\n$bottles.\n$take,\n" if $i;
 }
