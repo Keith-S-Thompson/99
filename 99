@@ -1,0 +1,30 @@
+#!/usr/bin/perl -w
+
+# $Id: 99,v 1.1 2004-08-15 13:54:13 kst Exp $
+# $Source: /home/kst/CVS_99/99/99,v $
+
+use strict;
+
+my $error_line = undef;
+
+while (<>) {
+    s/#.*$//;
+    s/^\s*//;
+    s/\s*$//;
+    $error_line = $. if not defined $error_line and /./;
+}
+
+die "Syntax error on line $error_line\n" if defined $error_line;
+
+for (my $i = 99; $i >= 1; $i --) {
+    my $s  = ($i == 1)     ? ''   : 's';
+    my $s1 = ($i - 1 == 1) ? ''   : 's';
+    my $i1 = ($i == 1)     ? 'No' : $i - 1;
+    my $blank = ($i == 1)  ? ''   : "\n";
+    print <<"EOF";
+$i bottle$s of beer on the wall,
+$i bottle$s of beer
+Take one down, pass it around,
+$i1 bottle$s1 of beer on the wall.$blank
+EOF
+}
