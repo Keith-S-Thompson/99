@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# $Id: 99,v 1.3 2011-05-17 15:51:43 kst Exp $
+# $Id: 99,v 1.4 2011-05-17 18:46:42 kst Exp $
 # $Source: /home/kst/CVS_99/99/99,v $
 
 #
@@ -10,8 +10,6 @@
 use strict;
 use warnings;
 
-my $error_line = undef;
-
 #
 # Check for errors.
 #
@@ -19,15 +17,13 @@ while (<>) {
     s/#.*$//;
     s/^\s*//;
     s/\s*$//;
-    defined $error_line or $error_line = $. if /./;
+    die $ARGV eq '-' ? 'stdin' : $ARGV, ":$.: Syntax error\n" if /./;
 }
-
-die "Syntax error on line $error_line\n" if defined $error_line;
 
 #
 # "Run" the "program".
 #
-for (my $i = 99; $i >= 0; $i --) {
+foreach my $i (reverse 0..99) {
     my $s   = $i == 1 ? ''   : 's';
     my $num = $i == 0 ? 'No' : $i;
     my $one = $i == 1 ? 'it' : 'one';
