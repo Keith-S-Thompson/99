@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-# $Id: 99,v 1.2 2004-08-15 21:43:42 kst Exp $
+# $Id: 99,v 1.3 2011-05-17 15:51:43 kst Exp $
 # $Source: /home/kst/CVS_99/99/99,v $
 
 #
@@ -8,6 +8,7 @@
 #
 
 use strict;
+use warnings;
 
 my $error_line = undef;
 
@@ -27,9 +28,9 @@ die "Syntax error on line $error_line\n" if defined $error_line;
 # "Run" the "program".
 #
 for (my $i = 99; $i >= 0; $i --) {
-    my $s   = ($i == 1) ? ''   : 's';
-    my $num = ($i == 0) ? 'No' : $i;
-    my $one = ($i == 1) ? 'it' : 'one';
+    my $s   = $i == 1 ? ''   : 's';
+    my $num = $i == 0 ? 'No' : $i;
+    my $one = $i == 1 ? 'it' : 'one';
     my $bottles = "$num bottle$s of beer";
     my $take = "Take $one down, pass it around";
     print "$bottles on the wall.\n" if $i < 99;
