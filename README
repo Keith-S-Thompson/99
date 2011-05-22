@@ -1,0 +1,61 @@
+The 99 programming language is a special-purpose language specifically
+created for the <http://99-bottles-of-beer.net/> web site.
+
+99-bottles-of-beer.net is a collection of (as of Sat 2011-05-21)
+1400 different programs in different languages, each if which prints
+the lyrics to the song "99 Bottles of Beer on the Wall".
+
+When I ran across this site in 2005, I realized that the existing
+programs were far too verbose, with their loops, subroutines,
+print statements, and so forth.
+
+So I invented the 99 language.
+
+The language definition is relatively straightforward.
+
+Syntax:
+
+    A 99 program consists of a single text file.
+
+    On each line, everything from a '#' character to the end of the
+    line is ignored, i.e., comments are introduced by '#' characters.
+    (Unlike some other languages, '#' characters withing character
+    constants and string literals are not an issue.)
+
+    After comments are stripped, leading and trailing white space
+    are ignored.
+
+    Empty lines are ignored.
+
+    Anything not ignored is a syntax error.
+
+Semantics:
+
+    A syntactically valid 99 program, when executed, prints the lyrics
+    to the song "99 Bottles of Beer on the Wall".
+
+This distribution includes a 99 interpreter "99", written in Perl
+5, and a sample 99 program, "99.99".  The interpreter can read its
+input either from a file named on the command line, or from standard
+input if no arguments are given.  The interpreter implements a
+language extension, permitting multiple input files to be treated
+as a single 99 program; this extension is not supported by the
+language definition, as no actual use for it has been discovered.
+
+For your convenience, most systems already include a sample 99 program,
+typically called "/dev/null" (on Unix-like systems), "NUL:" (CP/M, MS-DOS
+and Windows), "NIL:" (Amiga), "NL:" or "NLA0:" (OpenVMS).
+
+See also <http://99-bottles-of-beer.net/language-99-804.html>.
+
+This project was originally hosted on my Roadrunner home page, at
+<http://home.san.rr.com/smov/99/>, but Roadrunner decided to delete
+user home pages without notifying me.
+
+I have received a massive number[*] of requests for a compiler for
+this language.  I will continue to consider such requests for the
+forseeable future.
+
+[*] Yes, 1 can be a massive number if you use a big enough font.
+
+                -- Keith Thompson <kst@mib.org> Sat 2011-05-21
