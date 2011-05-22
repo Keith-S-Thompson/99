@@ -1,8 +1,5 @@
 #!/usr/bin/perl
 
-# $Id: 99,v 1.4 2011-05-17 18:46:42 kst Exp $
-# $Source: /home/kst/CVS_99/99/99,v $
-
 #
 # Interpreter for the "99" programming language.
 #
