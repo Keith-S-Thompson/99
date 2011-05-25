@@ -19,7 +19,7 @@ Syntax:
 
     On each line, everything from a '#' character to the end of the
     line is ignored, i.e., comments are introduced by '#' characters.
-    (Unlike some other languages, '#' characters withing character
+    (Unlike some other languages, '#' characters within character
     constants and string literals are not an issue.)
 
     After comments are stripped, leading and trailing white space
