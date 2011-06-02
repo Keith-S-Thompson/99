@@ -46,8 +46,6 @@ For your convenience, most systems already include a sample 99 program,
 typically called "/dev/null" (on Unix-like systems), "NUL:" (CP/M, MS-DOS
 and Windows), "NIL:" (Amiga), "NL:", or "NLA0:" (OpenVMS).
 
-See also <http://99-bottles-of-beer.net/language-99-804.html>.
-
 This project was originally hosted on my Roadrunner home page, at
 <http://home.san.rr.com/smov/99/>, but Roadrunner decided to delete
 user home pages without notifying me.
@@ -55,6 +53,12 @@ user home pages without notifying me.
 I have received a massive number[*] of requests for a compiler for
 this language.  I will continue to consider such requests for the
 forseeable future.
+
+References:
+
+    https://github.com/Keith-S-Thompson/99
+    http://99-bottles-of-beer.net/language-99-804.html
+    http://esolangs.org/wiki/99
 
 [*] Yes, 1 can be a massive number if you use a big enough font.
 
