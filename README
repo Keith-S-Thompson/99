@@ -34,13 +34,14 @@ Semantics:
     A syntactically valid 99 program, when executed, prints the lyrics
     to the song "99 Bottles of Beer on the Wall".
 
-This distribution includes a 99 interpreter "99", written in Perl 5,
-and two sample 99 program, "99.99" and "empty.99".  The interpreter
-can read its input either from a file named on the command line,
-or from standard input if no arguments are given.  The interpreter
-implements a language extension, permitting multiple input files to
-be treated as a single 99 program; this extension is not supported by
-the language definition, as no actual use for it has been discovered.
+This distribution includes a 99 interpreter "99", written in Perl
+5, two sample 99 program, "99.99" and "empty.99", and a sample
+output file, "99.99.out".  The interpreter can read its input
+either from a file named on the command line, or from standard
+input if no arguments are given.  The interpreter implements a
+language extension, permitting multiple input files to be treated
+as a single 99 program; this extension is not supported by the
+language definition, as no actual use for it has been discovered.
 
 For your convenience, most systems already include a sample 99 program,
 typically called "/dev/null" (on Unix-like systems), "NUL:" (CP/M, MS-DOS
