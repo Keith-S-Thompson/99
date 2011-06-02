@@ -1,8 +1,8 @@
 The 99 programming language is a special-purpose language specifically
 created for the <http://99-bottles-of-beer.net/> web site.
 
-99-bottles-of-beer.net is a collection of (as of Sat 2011-05-21)
-1400 different programs in different languages, each if which prints
+99-bottles-of-beer.net is a collection of (as of Wed 2011-06-01)
+1428 different programs in different languages, each if which prints
 the lyrics to the song "99 Bottles of Beer on the Wall".
 
 When I ran across this site in 2005, I realized that the existing
@@ -44,7 +44,7 @@ the language definition, as no actual use for it has been discovered.
 
 For your convenience, most systems already include a sample 99 program,
 typically called "/dev/null" (on Unix-like systems), "NUL:" (CP/M, MS-DOS
-and Windows), "NIL:" (Amiga), "NL:" or "NLA0:" (OpenVMS).
+and Windows), "NIL:" (Amiga), "NL:", or "NLA0:" (OpenVMS).
 
 See also <http://99-bottles-of-beer.net/language-99-804.html>.
 
@@ -58,4 +58,4 @@ forseeable future.
 
 [*] Yes, 1 can be a massive number if you use a big enough font.
 
-                -- Keith Thompson <kst@mib.org> Sat 2011-05-21
+                -- Keith Thompson <kst@mib.org> Wed 2011-06-01
