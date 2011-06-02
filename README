@@ -1,7 +1,7 @@
 The 99 programming language is a special-purpose language specifically
 created for the <http://99-bottles-of-beer.net/> web site.
 
-99-bottles-of-beer.net is a collection of (as of Wed 2011-06-01)
+99-bottles-of-beer.net is a collection of (as of Thu 2011-06-02)
 1428 different programs in different languages, each if which prints
 the lyrics to the song "99 Bottles of Beer on the Wall".
 
@@ -34,18 +34,18 @@ Semantics:
     A syntactically valid 99 program, when executed, prints the lyrics
     to the song "99 Bottles of Beer on the Wall".
 
-This distribution includes a 99 interpreter "99", written in Perl
-5, two sample 99 program, "99.99" and "empty.99", and a sample
-output file, "99.99.out".  The interpreter can read its input
-either from a file named on the command line, or from standard
-input if no arguments are given.  The interpreter implements a
-language extension, permitting multiple input files to be treated
-as a single 99 program; this extension is not supported by the
-language definition, as no actual use for it has been discovered.
+This distribution includes a 99 interpreter "99", written in Perl 5,
+two sample 99 program, "99.99" and "empty.99", and a sample output
+file, "99.99.out".  The interpreter can read its input either
+from a file named on the command line, or from standard input if no
+arguments are given.  The interpreter implements a language extension,
+permitting multiple input files to be treated as a single 99 program;
+this extension is not supported by the language definition, as no
+actual use for it has been discovered.
 
 For your convenience, most systems already include a sample 99 program,
-typically called "/dev/null" (on Unix-like systems), "NUL:" (CP/M, MS-DOS
-and Windows), "NIL:" (Amiga), "NL:", or "NLA0:" (OpenVMS).
+typically called "/dev/null" (on Unix-like systems), "NUL:" (CP/M,
+MS-DOS and Windows), "NIL:" (Amiga), "NL:", or "NLA0:" (OpenVMS).
 
 This project was originally hosted on my Roadrunner home page, at
 <http://home.san.rr.com/smov/99/>, but Roadrunner decided to delete
@@ -63,4 +63,4 @@ References:
 
 [*] Yes, 1 can be a massive number if you use a big enough font.
 
-                -- Keith Thompson <kst@mib.org> Wed 2011-06-01
+                -- Keith Thompson <kst@mib.org> Thu 2011-06-02
