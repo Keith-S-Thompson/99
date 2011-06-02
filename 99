@@ -10,20 +10,16 @@ use warnings;
 #
 # Check for errors.
 #
-while (<>) {
-    s/#.*$//;
-    s/^\s*//;
-    s/\s*$//;
-    die $ARGV eq '-' ? 'stdin' : $ARGV, ":$.: Syntax error\n" if /./;
-}
+/^\s*(#.*)?$/ or die $ARGV eq '-' ? 'stdin' : $ARGV, ":$.: Syntax error\n" while (<>);
 
 #
 # "Run" the "program".
 #
 for (reverse 0..99) {
-    my $s   = $_ == 1 ? ''   : 's';
-    my $num = $_ == 0 ? 'No' : $_;
-    my $one = $_ == 1 ? 'it' : 'one';
+    my $__  = $_; $__--;
+    my $s   = $__ ? 's'   : '';
+    my $num = $_  ? $_    : 'No';
+    my $one = $__ ? 'one' : 'it';
     my $bottles = "$num bottle$s of beer";
     my $take = "Take $one down, pass it around";
     print "$bottles on the wall.\n" if $_ < 99;
