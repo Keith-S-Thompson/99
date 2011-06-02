@@ -20,13 +20,13 @@ while (<>) {
 #
 # "Run" the "program".
 #
-foreach my $i (reverse 0..99) {
-    my $s   = $i == 1 ? ''   : 's';
-    my $num = $i == 0 ? 'No' : $i;
-    my $one = $i == 1 ? 'it' : 'one';
+for (reverse 0..99) {
+    my $s   = $_ == 1 ? ''   : 's';
+    my $num = $_ == 0 ? 'No' : $_;
+    my $one = $_ == 1 ? 'it' : 'one';
     my $bottles = "$num bottle$s of beer";
     my $take = "Take $one down, pass it around";
-    print "$bottles on the wall.\n" if $i < 99;
-    print "\n" if $i % 99;
-    print "$bottles on the wall,\n$bottles.\n$take,\n" if $i;
+    print "$bottles on the wall.\n" if $_ < 99;
+    print "\n" if $_ % 99;
+    print "$bottles on the wall,\n$bottles.\n$take,\n" if $_;
 }
