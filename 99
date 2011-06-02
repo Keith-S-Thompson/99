@@ -16,13 +16,13 @@ use warnings;
 # "Run" the "program".
 #
 for (reverse 0..99) {
-    my $__  = $_; $__--;
-    my $s   = $__ ? 's'   : '';
-    my $num = $_  ? $_    : 'No';
-    my $one = $__ ? 'one' : 'it';
-    my $bottles = "$num bottle$s of beer";
-    my $take = "Take $one down, pass it around";
-    print "$bottles on the wall.\n" if $_ < 99;
+    my $__ = $_; $__--;
+    my $s  = $__ ? 's'   : '';
+    my $n  = $_  ? $_    : 'No';
+    my $o  = $__ ? 'one' : 'it';
+    my $b  = "$n bottle$s of beer";
+    my $t  = "Take $o down, pass it around";
+    print "$b on the wall.\n" if $_ < 99;
     print "\n" if $_ % 99;
-    print "$bottles on the wall,\n$bottles.\n$take,\n" if $_;
+    print "$b on the wall,\n$b.\n$t,\n" if $_;
 }
