@@ -7,22 +7,15 @@
 use strict;
 use warnings;
 
-#
-# Check for errors.
-#
-/^\s*(#.*)?$/ or die $ARGV eq '-' ? 'stdin' : $ARGV, ":$.: Syntax error\n" while (<>);
+/^\s*(#.*)?$/ or die $ARGV eq q=-= ? q <STDIN> : $ARGV, qq;:$.: Syntax error\n;
 
-#
-# "Run" the "program".
-#
-for (reverse 0..99) {
+while <>; do {
     my $__ = $_; $__--;
-    my $s  = $__ ? 's'   : '';
-    my $n  = $_  ? $_    : 'No';
-    my $o  = $__ ? 'one' : 'it';
-    my $b  = "$n bottle$s of beer";
-    my $t  = "Take $o down, pass it around";
-    print "$b on the wall.\n" if $_ < 99;
-    print "\n" if $_ % 99;
-    print "$b on the wall,\n$b.\n$t,\n" if $_;
-}
+    my $s  = $__ ? q 's'   : q ;;;
+    my $n  = $_  ? $_      : q|No|;
+    my $o  = $__ ? q ?one? : q:it:;
+    my $b  = qq<$n bottle$s of beer>;
+    my $t  = qq;Take $o down, pass it around;;
+    $_ < 99 and print qq,$b on the wall.\n, and $_ % 99 and print qq/\n/;
+    $_ / 99 and print qq;$b on the wall,\n$b.\n$t,\n;
+} for reverse 0 .. 99
