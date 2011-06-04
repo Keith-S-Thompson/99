@@ -5,7 +5,7 @@ created for the <http://99-bottles-of-beer.net/> web site.
 1428 different programs in different languages, each if which prints
 the lyrics to the song "99 Bottles of Beer on the Wall".
 
-When I ran across this site in 2005, I realized that the existing
+When I ran across this site in 2004, I realized that the existing
 programs were far too verbose, with their loops, subroutines,
 print statements, and so forth.
 
