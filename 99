@@ -14,8 +14,8 @@ while <>; do {
     my $s  = $__ ? q 's'   : q ;;;
     my $n  = $_  ? $_      : q|No|;
     my $o  = $__ ? q ?one? : q:it:;
-    my $b  = qq<$n bottle$s of beer>;
-    my $t  = qq;Take $o down, pass it around;;
+    my $b  = qq '$n bottle$s of beer';
+    my $t  = qq ;Take $o down, pass it around;;
     $_ < 99 and print qq,$b on the wall.\n, and $_ % 99 and print qq/\n/;
     $_ / 99 and print qq;$b on the wall,\n$b.\n$t,\n;
 } for reverse 0 .. 99
