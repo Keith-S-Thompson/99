@@ -1,6 +1,10 @@
 The 99 programming language is a special-purpose language specifically
 created for the <http://99-bottles-of-beer.net/> web site.
 
+[NOTE: On Sun 2011-08-28 I retroactively changed the author
+information in all checkins.  Nothing nefarious, just cleanup.
+If you've pulled this repository before, please pull it again.]
+
 99-bottles-of-beer.net is a collection of (as of Thu 2011-06-02)
 1428 different programs in different languages, each if which prints
 the lyrics to the song "99 Bottles of Beer on the Wall".
