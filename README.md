@@ -68,4 +68,4 @@ References:
 
 [*] Yes, 1 can be a massive number if you use a big enough font.
 
-   -- Keith Thompson <Keith.S.Thompson@gmail.com> Sat 2012-09-15
+   -- [Keith Thompson](mailto:Keith.S.Thompson@gmail.com) Sat 2012-09-15
