@@ -1,5 +1,5 @@
 The 99 programming language is a special-purpose language specifically
-created for the [99 Bottles of Beer](http://99-bottles-of-beer.net/
+created for the [99 Bottles of Beer](http://99-bottles-of-beer.net/)
 web site.
 
 [NOTE: On Sun 2011-08-28 I retroactively changed the author
