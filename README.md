@@ -22,9 +22,9 @@ Syntax:
 
 - A 99 program consists of a single text file.
 
-- On each line, everything from a `'#'` character to the end of the
-  line is ignored, i.e., comments are introduced by `'#'` characters.
-  (Unlike some other languages, `'#'` characters within character
+- On each line, everything from a `#` character to the end of the
+  line is ignored, i.e., comments are introduced by `#` characters.
+  (Unlike some other languages, `#` characters within character
   constants and string literals are not an issue.)
 
 - After comments are stripped, leading and trailing white space
@@ -68,4 +68,4 @@ References:
 
 [*] Yes, 1 can be a massive number if you use a big enough font.
 
-        -- Keith Thompson <Keith.S.Thompson@gmail.com> Sat 2012-09-15
+   -- Keith Thompson <Keith.S.Thompson@gmail.com> Sat 2012-09-15
